@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Assignment notes for Mrs.Ferner: I took the professional approach to webpage design and decided to make the index page a seperate one from the home page. Both pages are reachable from one another, but each has their own unique function. This home page functions as the landing page for the site that fulfils the normal function for a typical website's homepage.-->
+
+<head>
+    <!-- Page creator: Cameron DeVaul -->
+    <meta charset="utf-8">
+    <title>Grocer Home Page </title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="logo">
+        <h1>Grocer</h1>
+        <h3 class="subheading">Your grocery shopping assistant!</h3>
+        <script src="js/main.js"></script>
+        <button type="button" class="hamburger"></button>
+        <div class="content">
+            <ul>
+                <li>
+                    <a class="active" href="index.htm">Home</a>
+                </li>
+                <li>
+                    <a href="features.htm">Features</a>
+                </li>
+                <li>
+                    <a href="support.htm">Support</a>
+                </li>
+                <li>
+                    <a href="contactus.htm">Contact Us</a>
+                </li>
+                <li>
+                    <a href="sitemap.htm">Index</a>
+                </li>
+            </ul>
+        </div>
+        <script src="js/main.js"></script>
+
+    </header>
+    <main>
+        <!-- SEO: Voice search keyword matching for smart devices, "What is grocer?" provides
+                 more accessability to people who ask the question when using digital assistants. -->
+        <h2>What is Grocer?</h2>
+        <p>Grocer is a grocery shopping companion application that allows a user to shop for the food they need for
+            their diets, while avoiding foods that may trigger their allergies.</p>
+        <h2>About us</h2>
+        <p>This website helps new potential users discover Grocer&trade;, the grocery shopping assistant app. This
+            website also helps current users maximize the potential usage of their current account to make their
+            shopping experiences go as smooth as possible.</p>
+        <section id="appstorelink">
+            <!-- SEO: Link to stores that display/sell the featured product of the webpage -->
+            Find us in your app store of choice and start shopping smart today!<br>
+            <a href="https://play.google.com/store/search?q=Grocer&hl=en_US"><img src="images/google.png"
+                    alt="google play store"></a>
+            <a href="https://www.apple.com/us/search/Grocer?src=globalnav"><img src="images/apple.png"
+                    alt="apple app store"></a>
+            <a href="https://www.microsoft.com/en-us/search?q=Grocer"><img src="images/windows.png"
+                    alt="windows store"></a>
+        </section>
+        <script src="js/print.js"></script>
+        <button class="Printer" onclick="printthis()"><img src="images/print.png" alt="print this page"></button>
+
+    </main>
+    <footer>
+        <img class="l" src="images/logo.png" alt="logo">
+        <p>This website was created for educational purposes under the Creative Commons Open Educational Resource
+            (OER) license and is permitted to be used for no-cost access, adaptation and redistribution by others.
+        </p>
+        <p>Grocer&trade; is a fictional trademark created for the educational purposes of the website and cannot be
+            used to provide a basis for lawsuit due to fraudulent professional business practices sought by a
+            corporate entity.</p>
+        <p style="text-align: center;">
+            Date accessed:
+            <script>
+                var today = new Date();
+                document.write(today.toDateString());
+            </script>
+        </p>
+    </footer>
+</body>
+
+</html>

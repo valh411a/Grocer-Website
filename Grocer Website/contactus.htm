@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Page creator: Cameron DeVaul -->
+    <meta charset="utf-8">
+    <title>Contact Us @Grocer </title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="logo">
+        <h1>Grocer</h1>
+        <h3 class="subheading">Your grocery shopping assistant!</h3>
+        <script src="js/main.js"></script>
+        <button type="button" class="hamburger"></button>
+        <div class="content">
+            <ul>
+                <li>
+                    <a href="index.htm">Home</a>
+                </li>
+                <li>
+                    <a href="features.htm">Features</a>
+                </li>
+                <li>
+                    <a href="support.htm">Support</a>
+                </li>
+                <li>
+                    <a class="active" href="contactus.htm">Contact Us</a>
+                </li>
+                <li>
+                    <a href="sitemap.htm">Index</a>
+                </li>
+            </ul>
+        </div>
+        <script src="js/main.js"></script>
+    </header>
+
+    <!-- SEO: Discretely organized contact information that links to action-style hyperlinks, allows for
+         search engines to search for "Grocer phone number", as well as allows voice searches to handle 
+         requests such as "Call Grocer customer service." -->
+    <main>
+        <h2>Tell us how you feel!</h2>
+        <table>
+            <tr>
+                <td>
+                    Talk to a representative:<br>
+                    <a href="tel:123-456-7890">(123)456-7890</a><br>
+                    <a href="mailto:customerservice@grocer.com">customerservice@grocer.com</a>
+                    <img id="rep" src="images/representative.jpg" alt="representative">
+                </td>
+                <td>
+                    Reach out to our legal team:<br>
+                    <a href="tel:246-810-1214">(246)810-1214</a><br>
+                    <a href="mailto:legal@grocer.com">legal@grocer.com</a>
+                    <img id="legal" src="images/legal.jpg" alt="legal team">
+                </td>
+            </tr>
+        </table>
+        <script src="js/print.js"></script>
+        <button class="Printer" onclick="printthis()"><img src="images/print.png" alt="print this page"></button>
+    </main>
+    <footer>
+        <img class="l" src="images/logo.png" alt="logo">
+        <p>This website was created for educational purposes under the Creative Commons Open Educational Resource
+            (OER) license and is permitted to be used for no-cost access, adaptation and redistribution by others.
+        </p>
+        <p>Grocer&trade; is a fictional trademark created for the educational purposes of the website and cannot be
+            used to provide a basis for lawsuit due to fraudulent professional business practices sought by a
+            corporate entity.</p>
+        <p style="text-align: center;">
+            Date accessed:
+            <script>
+                var today = new Date();
+                document.write(today.toDateString());
+            </script>
+        </p>
+    </footer>
+</body>
+
+</html>

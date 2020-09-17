@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Page creator: Cameron DeVaul -->
+    <meta charset="utf-8">
+    <title>Grocer Features</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="logo">
+        <h1>Grocer</h1>
+        <h3 class="subheading">Your grocery shopping assistant!</h3>
+        <script src="js/main.js"></script>
+        <button type="button" class="hamburger"></button>
+        <div class="content">
+            <ul>
+                <li>
+                    <a href="index.htm">Home</a>
+                </li>
+                <li>
+                    <a class="active" href="features.htm">Features</a>
+                </li>
+                <li>
+                    <a href="support.htm">Support</a>
+                </li>
+                <li>
+                    <a href="contactus.htm">Contact Us</a>
+                </li>
+                <li>
+                    <a href="sitemap.htm">Index</a>
+                </li>
+            </ul>
+        </div>
+        <script src="js/main.js"></script>
+
+    </header>
+    <main>
+        <h2>Features</h2>
+        <section id="slideshow">
+                <script src="js/slideshow.js"></script>
+                <img id="slide" src="images/presshoppinglist.jpg" alt="shopping list">
+                <div id="slides">
+                    <img src="images/presshoppinglist.jpg" alt="Personalize your shopping list">
+                    <img src="images/presqrcode.jpg" alt="Scan food for details">
+                    <img src="images/presdiet.jpg" alt="Maintain your diets">
+                    <img src="images/presallergy.jpg" alt="Monitor your allergies">
+                    <img src="images/presstore.jpg" alt="Shop at your favorite stores">
+                </div>
+                <h2 id="caption">Personalize your shopping list</h2>
+            </section>
+        <ul id="showcase">
+            <li class="showcase_item">
+                <img class="l" src="images/shoppinglist.png" alt="shoppinglist">
+                <h1>Your very own self-curated shopping list</h1>
+                <p>Create a shopping list for all of your foods so that you know what exactly you need when you go
+                    on your shopping trips! Hand-pick the foods you need either from the general food database, or
+                    from the specific dietary needs lists that can help you shop smarter.</p><br />
+            </li>
+            <li class="showcase_item">
+                <img class="r" src="images/barcode.png" alt="barcode">
+                <h1>Scan and find out in real time what you need to know</h1>
+                <p>With the built-in barcode scanner, you can scan applicable food packaging UPC codes and find out
+                    immediately what diets the food is good or bad for, what allergies it would be bad to come in
+                    contact with, as well as add it to your personal shopping list.</p>
+            </li>
+            <li class="showcase_item">
+                <img class="l" src="images/diet.png" alt="diet">
+                <h1>Maintain your diet effortlessly</h1>
+                <p>Create and automatically modify a list of the foods that are intrinsic to your diet, as well as
+                    know which foods to avoid in order to keep your diet on track.</p><br />
+            </li>
+            <li class="showcase_item">
+                <img class="r" src="images/allergy.png" alt="allergy">
+                <h1>Shop with allergies in mind</h1>
+                <p>Know which foods to avoid with your allergies! When creating shopping lists, you can stay
+                    informed when you add an item that will be hazardous for you to eat with your chosen allergies
+                    (if any).</p>
+            </li>
+            <li class="showcase_item">
+                <img class="l" src="images/store.png" alt="store">
+                <h1>Find the items you need and the stores you want</h1>
+                <p>Keep a list of your favorite stores. Find a store that carries the food you need for your
+                    shopping list.</p>
+            </li>
+        </ul>
+        <script src="js/print.js"></script>
+        <button class="Printer" onclick="printthis()"><img src="images/print.png" alt="print this page"></button>
+    </main>
+    <footer>
+        <img class="l" src="images/logo.png" alt="logo">
+        <p>This website was created for educational purposes under the Creative Commons Open Educational Resource
+            (OER) license and is permitted to be used for no-cost access, adaptation and redistribution by others.
+        </p>
+        <p>Grocer&trade; is a fictional trademark created for the educational purposes of the website and cannot be
+            used to provide a basis for lawsuit due to fraudulent professional business practices sought by a
+            corporate entity.</p>
+        <p style="text-align: center;">
+            Date accessed:
+            <script>
+                var today = new Date();
+                document.write(today.toDateString());
+            </script>
+        </p>
+    </footer>
+</body>
+
+</html>

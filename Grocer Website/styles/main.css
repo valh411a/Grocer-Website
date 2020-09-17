@@ -1,0 +1,367 @@
+/* CSS File curated by Cameron DeVaul */
+
+body {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0;
+    border: solid;
+    max-width: 1080px;
+}
+
+header {
+    text-align: center;
+    position: relative;
+    padding: 0 25px;
+    margin: auto;
+    height: 100px;
+    background-color: #d1ffb8;
+}
+
+header img {
+    position: absolute;
+    width: 100px;
+    display: block;
+    margin-top: 5px;
+}
+
+header h1 {
+    margin: 0;
+    position: absolute;
+    display: block;
+    margin: 10px 0 0 110px;
+}
+
+header h3 {
+    margin: 0;
+    position: absolute;
+    display: block;
+    margin: 50px 0 0 110px;
+}
+
+.hamburger {
+    display: none;
+}
+
+header .content {
+    display: block;
+}
+
+header ul {
+    position: absolute;
+    right: 25px;
+    list-style: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+header ul li {
+    float: left;
+}
+
+header li a {
+    display: block;
+    padding: 41px 10px 41px;
+    text-decoration: none;
+    color: black;
+}
+
+header li a.active {
+    background-color: lightgreen;
+}
+
+main {
+    margin: 10px;
+    font-size: 20px;
+}
+
+main h1 {
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+main h2 {
+    font-size: 40px;
+    margin-block-end: 0;
+}
+
+main p {
+    margin: 40px;
+    font-family: "Times New Roman", Times, serif;
+
+}
+
+.collapsible {
+    background-color: #d1ffb8;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin-right: 20px;
+    border-bottom-style: solid;
+}
+
+.active, .collapsible:hover {
+    background-color: lightgreen;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+.collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.collapsible .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    background-color: lightgrey;
+    color: black;
+    text-align: center;
+    padding: 30px;
+    margin-top: 100px;
+}
+
+footer img.l {
+    position: static;
+    float: inherit;
+    left: 0;
+    height: 50px;
+    width: 50px;
+}
+
+#showcase {
+    position: relative;
+    padding: 0 25px;
+    margin: auto;
+}
+
+li.showcase_item {
+    display: flex;
+    flex-flow: wrap;
+    text-decoration: none;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+li.showcase_item img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    position: absolute;
+}
+
+li.showcase_item h1 {
+    text-decoration: none;
+    font-size: 25px;
+    margin-left: 110px;
+}
+
+li.showcase_item p {
+    margin: 0 0 0 115px;
+}
+
+main table {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    z-index: -1;
+}
+
+main table td {
+    border-style: solid;
+    width: 40%;
+}
+
+main table img {
+    width: 100%;
+    opacity: 50%;
+}
+
+#construction {
+    position: relative;
+    display: flex;
+    flex-flow: wrap;
+}
+
+#construction img {
+    width: 100px;
+}
+
+button.Printer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    padding: 0;
+}
+
+button.Printer img {
+    width: 23px;
+    height: 23px;
+    padding: 0;
+}
+
+section#slideshow {
+    display: block;
+    text-align: center;
+    margin-block-end: 50px;
+    background-color: #d1ffb8;
+    border-style: solid;
+    border-color: black;
+    box-shadow: 0 0 3px #d1ffb8;
+    margin: 25px;
+}
+
+section#slideshow img {
+    width: 400px;
+}
+
+section h2 {
+	font-size: 125%;
+	margin: .8em 0 .5em 0;
+
+}
+
+section #slides img {
+    display:none;
+	}
+
+/* Rather than fit for finite pixel sizes, I went with resizing elements per aspect ratio,
+    which means the content will be found more suitable based on viewport shape in accordance to device size.
+    This mitigates issues surrounding small devices that have large-resolution displays such as modern smartphones. */
+@media screen and (max-aspect-ratio: 4/3) {
+    header h1, header h3 {
+        display: none;
+    }
+
+    header .content {
+        display: block;
+    }
+
+    header img {
+        width: 150px;
+    }
+
+    header {
+        height: 150px;
+    }
+
+    header li a {
+        font-size: 25px;
+        font-weight: bold;
+        padding: 60px 10px 60px;
+    }
+
+    main p {
+        font-size: 25px;
+    }
+}
+
+#appstorelink {
+    margin-top: 100px;
+    text-align: center;
+}
+
+#appstorelink img {
+    margin-top: 10px;
+    height: 50px;
+}
+
+@media screen and (max-aspect-ratio: 117/100) {
+    header {
+        text-align: right;
+    }
+
+    header .content {
+        display: none;
+        padding: 0;
+        padding-inline-start: 0;
+        z-index: 1;
+    }
+
+    header ul {
+        right: 150px;
+    }
+
+    header ul li {
+        float: none;
+        background-color: #d1ffb8;
+        border-bottom-style: solid;
+        border-right-style: solid;
+        border-left-style: solid;
+    }
+
+    header li a {
+        padding: 30px 10px 30px;
+    }
+
+    .hamburger {
+        position: absolute;
+        right: 0px;
+        width: 150px;
+        height: 150px;
+        display: block;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        background-color: transparent;
+    }
+
+    .hamburger::after {
+        content: '\2630';
+        font-size: 75px;
+    }
+}
+
+@media screen and (max-width: 518px) {
+    section#slideshow {
+        display: none;
+    }
+}
+
+@media print {
+    button.Printer {
+        display: none;
+    }
+
+   Header {
+       display: none;
+   }
+
+   footer {
+       display: none;
+   }
+
+   body {
+       border-style: none;
+   }
+
+   section#slideshow {
+       display: none;
+   }
+
+   main table td {
+       border-style: none;
+   }
+
+   main table img {
+       display: none;
+   }
+}
